@@ -6,4 +6,5 @@ index = gets.strip
 if valid_move? == true
   move (board, index)
   display_board(board)
+else puts "Invalid move. Please select another move."
 end
