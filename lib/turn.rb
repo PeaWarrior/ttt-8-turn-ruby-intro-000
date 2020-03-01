@@ -11,7 +11,7 @@ def input_to_index (input)
 end
 
 def valid_move?(index)
-  if index < 0 || index > 8
+  if index < 1 || index > 9
     return false
   else return true
   end
