@@ -3,3 +3,7 @@ require_relative '../lib/turn'
 
 puts "Where do you want to move?"
 index = gets.strip
+if valid_move? == true
+  move (board, index)
+  display_board(board)
+end
