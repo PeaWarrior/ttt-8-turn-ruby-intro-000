@@ -5,21 +5,3 @@ def display_board (board)
   puts "-----------"
   puts " #{board[6]} | #{board[7]} | #{board[8]|} "
 end
-
-def valid_move? (board, index)
-  if index < 0 || index > 8 || position_taken?(board,index) == true
-    return false
-  else return true
-  end
-end
-
-def position_taken? (board, index)
-  if board[index] == "X" || board[index] == "O"
-    return true
-  else return false
-  end
-end
-
-def move (board, index, value = "X")
-  board[index] = value
-end
