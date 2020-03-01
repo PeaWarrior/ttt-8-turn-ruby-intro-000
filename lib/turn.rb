@@ -23,3 +23,7 @@ def position_taken? (board, index)
   else return false
   end
 end
+
+def move (board, index, value == "X")
+  board[index] == value
+end
